@@ -1,0 +1,115 @@
+body{
+    background-color:grey;
+}
+/*
+a:hover{ /hover genel anlamda belirteç şeklinde kullanılıyor
+    mouse üzerine geldiğine ne olmasını istediğimizde bu tagi
+    kullanıyoruz.
+    background-color: blue !important;
+    font-size: 80px;
+    color: aliceblue;
+}
+*/
+button:hover{
+    background-color: aqua;
+    font-size: 80px;
+    color: red;
+}
+
+/*li:nth-child(1){
+    background-color: red;
+    color: blue;
+    font-size: 20px;
+    font-weight: bolder;
+}
+li:nth-child(2){
+    background-color: green;
+    color:red;
+    font-size: 20px;
+    font-weight: 600;
+}
+li:nth-child(3){
+    background-color: blue;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.second-list li:nth-child(1){
+    background-color: aliceblue;
+    color: aqua;
+    font-size: 20px;
+    font-weight: 600px;
+}
+.second-list li:nth-child(2){
+    background-color: gold;
+    color:blue;
+    font-size: 20px;
+    font-weight: 600px;
+}*/
+img{
+    /* position: absolute; "absolute neseninin konumunu ayarlıyor 
+    ve herhangi bir elementi baz almıyor */
+    position: relative;
+    float: right;
+    margin: 10px;
+    opacity: 0.5;
+    /*left: 100px;
+    top: 200px;
+    right: 200px;
+    padding-bottom: 2000px;
+    margin-bottom: 2000px;*/
+}
+
+.sticky{ /* sayfayı aşağıya indirdiğinizde o menününde gelmesi */
+    position: sticky;
+    position:-webkit-sticky;
+    top: 0;
+    background-color: cornflowerblue;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 50px;
+
+}
+div ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: gold !important;
+    overflow: hidden;
+}
+li{
+    float: left;
+}
+li a{
+    font-size: 15px;
+    color:black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: red;
+}
+
+li.dropdown{
+    display: inline-block;
+
+}
+.dropdown-content{
+    display: none;
+    background-color: purple;
+    width: 150px;
+    position: absolute;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content a{
+    color: white;
+    padding: 2px;
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: black;
+}
